@@ -11,6 +11,26 @@ from sklearn.model_selection import train_test_split
 import seaborn as sns
 from streamlit_option_menu import option_menu
 
+import codecs
+import streamlit.components.v1 as stc
+
+def st_doctor(doctor_html,width =700,height =800):
+  doct_file =codecs.open(doctor.html,'r')
+  page= doct_file.read()
+  stc.html(page,width=width,height=height,scrolling=True)
+
+
+def st_diet(diet_html,width =700,height =800):
+  diet_file =codecs.open(diet.html,'r')
+  page= diet_file.read()
+  stc.html(page,width=width,height=height,scrolling=True)
+
+def st_blog(doctor_html,width =700,height =800):
+  blog_file =codecs.open(blog.html,'r')
+  page= blog_file.read()
+  stc.html(page,width=width,height=height,scrolling=True)
+
+
 st.markdown("""""",unsafe_allow_html=True)
 
 
